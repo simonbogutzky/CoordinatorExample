@@ -48,7 +48,7 @@ extension Coordinator {
                 return true
             }
             
-            if child.children.count > 0 {
+            if !child.children.isEmpty {
                 print("Ask child: \(child)")
                 if child.removeCoordinatorOf(fromViewController: fromViewController) {
                     return true
