@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="CoordinatorExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uTz-Kq-Hb2">
+                                <rect key="frame" x="143" y="371.5" width="128.5" height="153"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tg-Ws-pNs">
+                                        <rect key="frame" x="34" y="0.0" width="60" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFw-ih-FbK">
+                                        <rect key="frame" x="14.5" y="40" width="99.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Login Again"/>
+                                        <connections>
+                                            <action selector="goToLoginAgainButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9m-f1-g9x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2K-IV-cEN">
+                                        <rect key="frame" x="26.5" y="81" width="75" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="goToSignupButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="57d-2u-K5A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMH-k4-Qmh">
+                                        <rect key="frame" x="0.0" y="122" width="128.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Present Sign Up"/>
+                                        <connections>
+                                            <action selector="presentSignupButtonTouchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ac4-NQ-H6h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uTz-Kq-Hb2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DLs-eh-LUv"/>
+                            <constraint firstItem="uTz-Kq-Hb2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="chf-FP-uQd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goToLoginAgainButton" destination="aFw-ih-FbK" id="E1y-6i-X66"/>
+                        <outlet property="goToSignupButton" destination="y2K-IV-cEN" id="RzU-gQ-SfT"/>
+                        <outlet property="presentSignupButton" destination="TMH-k4-Qmh" id="hT0-3T-gKK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="79"/>
+        </scene>
+        <!--Signup View Controller-->
+        <scene sceneID="DhR-6Y-26c">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="0NH-5f-1SF" customClass="SignupViewController" customModule="CoordinatorExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dyt-AB-9pU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P7W-1c-te1">
+                                <rect key="frame" x="142.5" y="412.5" width="129.5" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVk-Ur-O1Q">
+                                        <rect key="frame" x="22" y="0.0" width="85.5" height="30"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOg-EF-22x">
+                                        <rect key="frame" x="0.0" y="40" width="129.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Go back to login"/>
+                                        <connections>
+                                            <action selector="goLoginButtonTouchedUpInside:" destination="0NH-5f-1SF" eventType="touchUpInside" id="bJQ-yB-Fm5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0o9-Ch-FLS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P7W-1c-te1" firstAttribute="centerX" secondItem="dyt-AB-9pU" secondAttribute="centerX" id="G2B-mC-3hd"/>
+                            <constraint firstItem="P7W-1c-te1" firstAttribute="centerY" secondItem="dyt-AB-9pU" secondAttribute="centerY" id="drU-iz-OZz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goToLoginButton" destination="eOg-EF-22x" id="ANQ-Up-eye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfM-Vq-c60" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
